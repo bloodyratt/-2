@@ -1,16 +1,38 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+Завдання 1:
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    else:
+        return False
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+Завдання 2:
+
+
+def count_vowels(string):
+    vowels = 'aeiouAEIOU'
+    count = 0
+    for char in string:
+        if char in vowels:
+            count += 1
+    return count
+
+
+
+Завдання 3:
+
+
+def factorial(number):
+    result = 1
+    if number < 0:
+        return "Факторіал невід'ємного числа не може бути обчислений."
+    elif number == 0:
+        return result
+    else:
+        for i in range(1, number + 1):
+            result *= i
+        return result
+
